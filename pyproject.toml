@@ -5,7 +5,6 @@ requires-python = ">=3.11"
 dependencies = [
     "langgraph>=0.3",
     "langchain-core>=0.3",
-    "langchain-anthropic>=0.3",
     "python-dotenv>=1.0",
     "langgraph-checkpoint-sqlite>=2.0",
     "langchain-groq>=1.1.2",
@@ -28,5 +27,5 @@ packages = ["src/agent_studies"]
 testpaths = ["tests"]
 asyncio_mode = "auto"
 markers = [
-    "integration: end-to-end tests requiring ANTHROPIC_API_KEY",
+    "integration: end-to-end tests requiring GROQ_API_KEY",
 ]

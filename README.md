@@ -45,7 +45,7 @@ A ReAct-style agent with:
 ```bash
 git clone https://github.com/BlazeK1nn/langgraph-agent-studies
 cd langgraph-agent-studies
-cp .env.example .env  # add your ANTHROPIC_API_KEY
+cp .env.example .env  # add your GROQ_API_KEY
 uv sync
 uv run python examples/run_chat.py
 ```
