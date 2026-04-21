@@ -8,9 +8,9 @@ from agent_studies.memory import get_checkpointer
 @pytest.mark.integration
 def test_agent_calculates_17_times_23():
     """End-to-end: agent uses the calculate tool and returns 391."""
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
-        pytest.skip("ANTHROPIC_API_KEY not set")
+        pytest.skip("GROQ_API_KEY not set")
 
     with get_checkpointer(":memory:") as checkpointer:
         agent = build_agent(checkpointer)

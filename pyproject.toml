@@ -8,6 +8,7 @@ dependencies = [
     "langchain-anthropic>=0.3",
     "python-dotenv>=1.0",
     "langgraph-checkpoint-sqlite>=2.0",
+    "langchain-groq>=1.1.2",
 ]
 
 [project.optional-dependencies]
