@@ -4,8 +4,8 @@ from pathlib import Path
 from langchain_core.tools import tool
 
 # Resolved at import time; tests monkeypatch these module-level variables.
-DOCS_DIR: Path = Path(__file__).resolve().parents[3] / "docs"
-NOTES_DIR: Path = Path(__file__).resolve().parents[3] / "notes"
+DOCS_DIR: Path = Path(__file__).resolve().parents[2] / "docs"
+NOTES_DIR: Path = Path(__file__).resolve().parents[2] / "notes"
 
 _CONTEXT_WINDOW = 300
 _MAX_RESULTS = 3
